@@ -1,2 +1,2 @@
-# new_sptht
-sistem pakar tht metode certainty factor
+# SP_THT
+Sistem pakar penyakit THT menggunakan metode Certainty Factor

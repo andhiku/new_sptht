@@ -70,7 +70,7 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="<?php echo site_url() ?>Dashboard/user">Home</a></li>
-                                    <li><a href="<?php echo site_url() ?>Dashboard/diaagnosa">Diagnosa</a>
+                                    <li><a href="<?php echo site_url() ?>Dashboard/diagnosa">Diagnosa</a>
                                         
                                     <li><a href="<?php echo site_url() ?>Dashboard/about">About Us</a></li>
                                     <li><a href="<?php echo site_url() ?>Dashboard/contact">Contact</a></li>

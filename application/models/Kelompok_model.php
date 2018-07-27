@@ -42,4 +42,10 @@ class Kelompok_model extends CI_Model {
 		$query = $this->db->query(" DELETE FROM kelompok_gejala WHERE id='$id' ");
 		return $query;
 	}
+
+	function get_list_data(){
+        $this->db->select('*');
+        $this->db->from('kelompok_gejala');
+        return $this->db->get();
+    }
 }

@@ -93,47 +93,44 @@
     <!-- ##### Header Area End ##### -->
 
     <!-- ##### Breadcumb Area Start ##### -->
-    <div class="breadcumb-area bg-img" style="background-image: url(<?php echo base_url(); ?>template/temp_user/img/bg-img/breadcumb.jpg);">
+    <div class="breadcumb-area bg-img" style="background-image: url(img/bg-img/breadcumb.jpg);">
         <div class="bradcumbContent">
-            <h2>About Us</h2>
+            <h2>KLINIK</h2>
         </div>
     </div>
     <!-- ##### Breadcumb Area End ##### -->
 
     <!-- ##### About Us Area Start ##### -->
-    <?php echo form_open('registrasi/create'); ?>
-    <section class="about-us-area mt-50 section-padding-100">
+<section class="about-us-area mt-50 section-padding-100">
         <div class="container">
-          <div class="row" style="text-align:center;">
-            <div class="col-md-6 col-md-offset-2">
-             <div>
-                <label for="nama" class="sr-only">Masukkan Nama</label>
-                <input type="text" id="nama" name="nama" class="form-control" placeholder="Masukkan Nama" required autofocus />
-              </div><br>
-              <div>
-                <label for="umur"class="sr-only">Masukkan Umur></label>
-                <input type="umur" id="umur" name="umur" class="form-control" placeholder="Masukkan Umur" required />
-              </div><br>
-              <div>
-                <label for="jenkel"class="sr-only">Masukkan Jenis Kelamin></label>
-                <select name="jenkel" id="jenkel" class='form-control'>
-                    <option value="0" selected="selected">- Jenis Kelamin -</option>
-                    <option value="Perempuan">Perempuan</option>
-                    <option value="Laki-laki">Laki-laki</option>
-                </select>
-              </div><br>
-              <div>
-                <label for="alamat"class="sr-only">Masukkan Alamat></label>
-                <input type="alamat" id="alamat" name="alamat" class="form-control" placeholder="Masukkan Alamat" required />
-              </div><br>
-              <div>
-                <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Registrasi</button>
-              </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
+                        <h4>I Medical Specialist Center</h4><b>__________________________________________________</b>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="row">
+                <div class="col-12 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                    <p>     Sejarah I Medical Specialist Center Kota Makassar adalah salah satu klinik specialist yang berada di Jl. Racing Center. Klinik ini mulai dioperasionalkan pada April 2015.
+                    Klinik ini memiliki beberapa dokter specialist, seperti Dokter Gigi, Dokter Specialist THT.KL/ THT.KL(K), Dokter Specialist Kandungan, Dokter Spescialist Kulit Kelamin, dan Dokter Specialist Penyakit Dalam.</p>
+                </div>
+                <div class="col-12 col-md-6 wow fadeInUp" data-wow-delay="500ms">
+                    <p><img src="<?php echo base_url() ?>template/temp_user/img/bg-img/bg-3.jpg" alt=""></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="about-slides owl-carousel mt-100 wow fadeInUp" data-wow-delay="600ms">
+                        <img src="<?php echo base_url() ?>template/temp_user/img/bg-img/bg-3.jpg" alt="">
+                        <img src="<?php echo base_url() ?>template/temp_user/img/bg-img/bg-2.jpg" alt="">
+                        <img src="<?php echo base_url() ?>template/temp_user/img/bg-img/bg-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <?php echo form_close(''); ?>
+   
     <!-- ##### About Us Area End ##### -->
 
     <!-- ##### Team Area Start ##### -->

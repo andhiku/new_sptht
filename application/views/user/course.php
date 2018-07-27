@@ -102,6 +102,7 @@
     <!-- ##### Top Popular Courses Area Start ##### -->
     <div class="top-popular-courses-area mt-50 section-padding-100-70">
         <div class="container">
+
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
@@ -119,32 +120,27 @@
     <!-- ##### Top Popular Courses Area End ##### -->
 
     <!-- ##### Top Popular Courses Details Area Start ##### -->
+       <?php echo form_open() ?>
     <div class="popular-course-details-area wow fadeInUp" data-wow-delay="300ms">
         <div class="single-top-popular-course d-flex align-items-center flex-wrap">
             <div class="popular-course-content" style="margin-left:100px !important">
-                <span>Kelompok Gejala 1</span>
-                <input type="checkbox" name="gt-1"> Gejala 1 <br>
-                <input type="checkbox" name="gt-2"> Gejala 2 <br>
-                <input type="checkbox" name="gt-3"> Gejala 3 <br>
-                <input type="checkbox" name="gt-4"> Gejala 4 <br>
-                <input type="checkbox" name="gt-5"> Gejala 5 <br>
-                <input type="checkbox" name="gt-6"> Gejala 6 <br>
-                <input type="checkbox" name="gt-7"> Gejala 7 <br>
+                <?php foreach($listKelompok->result() as $value){?>
+                <span style="font-weight: bold;" ><?php echo $value->nama?></span><br>
+                    <?php
+                    $this->load->model(array('Gejala_model'));
+                    $listGejala = $this->Gejala_model->get_by_kelompok($value->id);
+                    foreach($listGejala->result() as $value2){?>
+                    <input type="checkbox" name="gejala[]" value="<?php echo $value2->id?>" > <?php echo $value2->kd_gejala." - ".$value2->gejala?> <br>
                 <br>
-                <span>Kelompok Gejala 2</span>
-                <input type="checkbox" name="gh-1"> Gejala 1 <br>
-                <input type="checkbox" name="gh-2"> Gejala 2 <br>
-                <input type="checkbox" name="gh-3"> Gejala 3 <br>
-                <input type="checkbox" name="gh-4"> Gejala 4 <br>
-                <input type="checkbox" name="gh-5"> Gejala 5 <br>
-                <input type="checkbox" name="gh-6"> Gejala 6 <br>
-                <input type="checkbox" name="gh-7"> Gejala 7 <br>
+                <?php }?>
+            <?php } ?>
 
                 <br><button class="btn btn-primary " type="submit" name="submit">Proses</button>
             </div>
             
         </div>
     </div>
+    <?php echo form_close() ?>
     <!-- ##### Top Popular Courses Details Area End ##### -->
 
 <div class="academy-courses-area section-padding-100-0">

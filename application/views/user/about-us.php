@@ -114,6 +114,10 @@
                 <div class="col-12 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                     <p>     Sejarah I Medical Specialist Center Kota Makassar adalah salah satu klinik specialist yang berada di Jl. Racing Center. Klinik ini mulai dioperasionalkan pada April 2015.
                     Klinik ini memiliki beberapa dokter specialist, seperti Dokter Gigi, Dokter Specialist THT.KL/ THT.KL(K), Dokter Specialist Kandungan, Dokter Spescialist Kulit Kelamin, dan Dokter Specialist Penyakit Dalam.</p>
+                    <br>
+                    <br>
+                    <b>Jam Praktek Dokter Specialist THT</b>
+                    <p><b>Dr. dr. Masyita Gaffar, SP.THT.KL</b></p>
                 </div>
                 <div class="col-12 col-md-6 wow fadeInUp" data-wow-delay="500ms">
                     <p><img src="<?php echo base_url() ?>template/temp_user/img/bg-img/bg-3.jpg" alt=""></p>
